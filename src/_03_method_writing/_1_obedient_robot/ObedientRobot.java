@@ -40,7 +40,7 @@ String shape = JOptionPane.showInputDialog("Do you want to draw a square, triang
 		drawCircle();
 	}
 	else {
-		JOptionPane.showMessageDialog(null, "Did you not read the instructions! It said square, triangle, or circle. Not that.");
+		JOptionPane.showMessageDialog(null, "Did you not read the instructions! It said square, triangle, or circle. Not " +  shape + ".");
 	}
 		
 }	
