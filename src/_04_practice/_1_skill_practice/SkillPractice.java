@@ -1,16 +1,18 @@
 package _04_practice._1_skill_practice;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
 public static void main(String[] args) {
 	
 	SkillPractice skills = new SkillPractice();
-    skills.skill1();
-    skills.skill2();
-    skills.skill3();
-    skills.skill4();
-    skills.skill5();
+      skills.skill1();
+      skills.skill2();
+      skills.skill3();
+      skills.skill4();
+      skills.skill5();
 }
 
 void skill1() {
@@ -33,15 +35,21 @@ JOptionPane.showMessageDialog(null, "Eat your Wheatie's!");
 }
 }
 void skill2() {
-	
 
-	
-	
+	for (int i = 1; i <= 30; i++) {
+		if (i%3==0) {
+			System.out.println(i);
+		}
+	}	
 }
 void skill3() {
 	
-
-	
+Random rand = new Random();
+int num20 = rand.nextInt(20);
+System.out.println(num20);
+int num10 = rand.nextInt(10);
+System.out.println(num10);
+JOptionPane.showMessageDialog(null,"The difference between the 2 random number is " + (num20 - num10));
 	
 }
 void skill4() {
